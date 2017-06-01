@@ -13,11 +13,11 @@ Aqui são descritos todos os requisitos, funcionalidades, regras de negócio, do
 
 A documentação é dividida em 2 partes:
 
-[Documentação](/docs/documentacao/index.html)
+[Documentação](https://christianpieri.github.io/doc/docs/documentacao/index.html)
 
-- [Documentação](/docs/documentacao/documentacao.html) 
-- [Tecnologias utilizadas](/docs/documentacao/tecnologias.html)
+- [Documentação](https://christianpieri.github.io/doc/docs/documentacao/documentacao.html) 
+- [Tecnologias utilizadas](https://christianpieri.github.io/doc/docs/documentacao/tecnologias.html)
 
-[Manual do usuário](/docs/users_guide/index.html)
+[Manual do usuário](https://christianpieri.github.io/doc/docs/users_guide/index.html)
 
-- [Passo-a-passo](/docs/users_guide/passo-a-passo.html)
+- [Passo-a-passo](https://christianpieri.github.io/doc/docs/users_guide/passo-a-passo.html)
