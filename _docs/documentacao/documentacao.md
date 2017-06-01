@@ -6,15 +6,15 @@ parent: documentacao
 ---
 
 
-#1. Com relação ao trabalho realizado
+# 1. Com relação ao trabalho realizado
 
 A disciplina INE5425 (Modelagem e Simulação), ministrada pelo professor Paulo Freitas na Universidade Federal de Santa Catarina (UFSC), teve como primeiro projeto do semestre 2017.1 um simulador em linguagem de propósito geral sobre “O andar do bêbado”.
 
-##1.1 Introdução
+## 1.1 Introdução
 
 Neste trabalho, pedia-se para desenvolver uma aplicação de Monte Carlo que faria um cálculo de um **caminho aleatório** qualquer, simulando os passos de um bêbado. A analogia criada é justamente esta: verificar a distância percorrida por um sujeito bêbado.
 
-##1.2 Teoria
+## 1.2 Teoria
 
 Foram passadas algumas fórmulas e parâmetros para simular o andar de um bêbado:
 
@@ -23,7 +23,7 @@ Foram passadas algumas fórmulas e parâmetros para simular o andar de um bêbad
 - Deve-se tomar em questão que o bêbado está em um plano (x, y);
 - O ponto de partida é o ponto (0, 0).
 
-#2. Requisitos de sistema
+# 2. Requisitos de sistema
 
 ## 2.1 Gráfico de caminho percorrido
 
@@ -48,11 +48,11 @@ Os dois campos são de preenchimento **obrigatório** e devem aceitar apenas car
 
 Com o número de replicações da simulação também sendo informado pelo usuário, é possível determinar o número total de classes através da função “raiz de n”, porém, o número de classes máximo possível deve ser 30; mesmo que n tenha um valor maior que 900.
 
-#3. Como utilizar o sistema
+# 3. Como utilizar o sistema
 
 O **manual do usuário** é um requisito de entrega do trabalho e está descrito nesta presente documentação na parte de Manual do usuário. Ele é um guia de como utilizar o sistema.
 
-#4. O código do trabalho
+# 4. O código do trabalho
 
 Como explicado na seção de tecnologias utilizadas, o projeto foi desenvolvido em JavaScript.
 A principal função é a *startSimulation()*. Ela pega o número de passos e repetições que o usuário disponibiliza e plota os resultados em forma de gráficos.
