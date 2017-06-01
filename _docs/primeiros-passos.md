@@ -11,11 +11,12 @@ Este site apresenta a documentação técnica do projeto de Modelagem e Simulaç
 Aqui são descritos todos os requisitos, funcionalidades, regras de negócio, documentos referenciados como guias e normas referentes a regras de negócio, necessários para o desenvolvimento do sistema.
 
 A documentação é dividida em 2 partes:
-1. [Documentação](/documentacao/index.html)
+
+[Documentação](/documentacao/index.html)
 
 - [Documentação](documentacao/documentacao.html) 
 - [Tecnologias utilizadas](documentacao/tecnologias.html)
 
-2. [Manual do usuário](/users_guide/index.html)
+[Manual do usuário](/users_guide/index.html)
 
 - [Passo-a-passo](/users_guide/passo-a-passo.html)
