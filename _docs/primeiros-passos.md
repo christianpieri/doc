@@ -12,11 +12,12 @@ Aqui são descritos todos os requisitos, funcionalidades, regras de negócio, do
 
 
 A documentação é dividida em 2 partes:
-1. [Documentação](/documentacao/index.md)
 
-- [Documentação](documentacao/documentacao.md) 
-- [Tecnologias utilizadas](documentacao/tecnologias.md)
+[Documentação](/documentacao/index.html)
 
-2. [Manual do usuário](/users_guide/index.md)
+- [Documentação](documentacao/documentacao.html) 
+- [Tecnologias utilizadas](documentacao/tecnologias.html)
 
-- [Passo-a-passo](/users_guide/passo-a-passo.md)
+[Manual do usuário](/users_guide/index.html)
+
+- [Passo-a-passo](/users_guide/passo-a-passo.html)
