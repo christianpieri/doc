@@ -82,15 +82,18 @@ function startSimulation(){
 	var n_repeticoes = 1 //default = 1
 
 ```
-Se o usuário alterou isso antes de clicar no botão, o próximo trecho de código vai alterar o valor dessas variáveis, além de utilizar a função criada anteriormente para checar se as entradas são válidas:
+Se o usuário alterou isso antes de clicar no botão, o próximo trecho de código vai alterar o valor dessas variáveis, além de utilizar a função criada anteriormente para checar se as entradas são válidas. Caso as entradas não sejam válidas, mostra-se o erro para o usuário e o programa não é executado. Isto é feito analisando a variável ```erro```
 
 ``` javascript
+var erro = false
+
 //Verificação se entradas de usuário são válidas:
 tmp = parseInt(document.getElementById("passos").value);
 if (isNumeric(tmp)){
   n_passos = tmp;
 } else {
-  alert('Número de passos inválido');
+  alert('Número de passos invalido');
+  erro = true
 }
 
 tmp = parseInt(document.getElementById("repeticoes").value);
@@ -98,7 +101,10 @@ if (isNumeric(tmp)){
   n_repeticoes = tmp;
 } else {
   alert('Número de repetições inválido');
+  erro = true
 }
+
+if (erro == false) { // Se não houver erro, continua a execução do programa
 ```
 Neste ponto as variáveis iniciais já estão setadas, está na hora de começar a lógica do programa.
 
@@ -377,4 +383,3 @@ Vale salientar que o os gráficos de posição e de distâncias mostrados são c
 	}
 }
 ```
-
