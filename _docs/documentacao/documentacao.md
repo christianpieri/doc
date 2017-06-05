@@ -50,7 +50,7 @@ Com o número de replicações da simulação também sendo informado pelo usuá
 
 # 3. Como utilizar o sistema
 
-O **manual do usuário** é um requisito de entrega do trabalho e está descrito nesta presente documentação na parte de Manual do usuário. Ele é um guia de como utilizar o sistema.
+O **[manual do usuário](https://christianpieri.github.io/doc/docs/users_guide/index.html)** é um requisito de entrega do trabalho e está descrito nesta presente documentação na parte de Manual do usuário. Ele é um guia de como utilizar o sistema.
 
 # 4. O código do trabalho
 
