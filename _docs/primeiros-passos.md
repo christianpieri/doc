@@ -15,7 +15,7 @@ A documentação é dividida em 2 partes:
 
 [Documentação](https://christianpieri.github.io/doc/docs/documentacao/index.html)
 
-- [Documentação](https://christianpieri.github.io/doc/docs/documentacao/documentacao.html) 
+- [Documentação do sistema](https://christianpieri.github.io/doc/docs/documentacao/documentacao.html) 
 - [Tecnologias utilizadas](https://christianpieri.github.io/doc/docs/documentacao/tecnologias.html)
 
 [Manual do usuário](https://christianpieri.github.io/doc/docs/users_guide/index.html)
