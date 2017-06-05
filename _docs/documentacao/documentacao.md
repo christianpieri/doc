@@ -73,8 +73,8 @@ function isNumeric(n) {
 }
 ```
 Aqui temos o início da função startSimulation(), a qual vai colocar valores default nas variáveis do programa, que são:
-- Número de passos **(n_passos)** = 10
-- Número de repetições do programa **(n_repeticoes)** = 1
+- Número de passos **(n_passos)** = 10;
+- Número de repetições do programa **(n_repeticoes)** = 1.
 
 ``` javascript
 function startSimulation(){
@@ -108,7 +108,7 @@ if (erro == false) { // Se não houver erro, continua a execução do programa
 ```
 Neste ponto as variáveis iniciais já estão setadas, está na hora de começar a lógica do programa.
 
-Primeiramente é criado um vetor, que é uma estrutura que vai armazenar os dados, chamado distancias_finais. Esse vetor é criado inicialmente vazio e vai armazenar a diferença entre a distância da posição final do bêbado e o esperado (raiz de n). Esta estrutura será usada posteriormente para a criação de um histograma de diferenças entre o observado e o esperado.
+Primeiramente é criado um vetor, que é uma estrutura que vai armazenar os dados, chamado **distancias_finais**. Esse vetor é criado inicialmente vazio e vai armazenar a diferença entre a distância da posição final do bêbado e o esperado (raiz de n). Esta estrutura será usada posteriormente para a criação de um histograma de diferenças entre o observado e o esperado.
 
 Então é criado um laço **for**, isto é, uma parte do código que vai se repetir quantas vezes for necessário. Neste caso ele vai repetir de acordo com a variável **n_repeticoes**, inserida pelo usuário.
 
@@ -118,12 +118,12 @@ var distancias_finais = [] //Diferença entre a distancia esperada(raiz de n) pa
 for (var k = 0; k < n_repeticoes; k ++) {
 ```
 Então para cada repetição, novas variáveis serão iniciadas para auxiliar no programa. São elas:
-- **pos_x** e **pos_y**: São vetores que vão armazenar cada posição do eixo x e y do bêbado, respectivamente. Elas são iniciadas com o valor 0, pois a posição inicial será (0,0);
-- **positions**: Esta variável é utilizada para auxiliar na plotagem dos gráficos posteriormente, pois a biblioteca Chart.js, utilizada para gerar os gráficos, espera os dados no formato de dicionário, formato na qual esta variável é atribuída. Ela guarda os mesmos dados que os vetores pos_x e pos_y.
-- **distances**: Esta variável vai armazentando as distâncias do ponto atual do bêbado ao ponto inicial (0,0). Esta variável é muito importante pois será comparada à raiz da quantidade de passos e preencher a variável distancias_finais.
-- **raiz**: Nesta, serão armazenados os valores de raiz do número de passos e será utilizado posteriormente para calcular as distâncias finais. Inicia-se com 0, pois a raiz de 0 (passo número 0) é zero.
-- **i**: Número correspondente ao passo atual.
-- **l**: Tamanho do passo. No caso, sempre 1, conforme descrito pelo problema. Mas numa versão futura do software, poderia ser modificado.
+- **pos_x** e **pos_y**: são vetores que vão armazenar cada posição do eixo x e y do bêbado, respectivamente. Elas são iniciadas com o valor 0, pois a posição inicial será (0,0);
+- **positions**: esta variável é utilizada para auxiliar na plotagem dos gráficos posteriormente, pois a biblioteca **Chart.js**, utilizada para gerar os gráficos, espera os dados no formato de dicionário, formato na qual esta variável é atribuída. Ela guarda os mesmos dados que os vetores **pos_x** e **pos_y**;
+- **distances**: esta variável vai armazenando as distâncias do ponto atual do bêbado ao ponto inicial (0,0). Esta variável é muito importante, pois será comparada à raiz da quantidade de passos e preencher a variável **distancias_finais**;
+- **raiz**: nesta serão armazenados os valores de raiz do número de passos que será utilizado posteriormente para calcular as distâncias finais. Inicia-se com 0, pois a raiz de 0 (passo número 0) é zero;
+- **i**: número correspondente ao passo atual;
+- **l**: tamanho do passo. No caso, sempre 1, conforme descrito pelo problema. Mas numa versão futura do software, poderia ser modificado.
 
 ``` javascript
   // Lista de posições
@@ -140,11 +140,11 @@ Então para cada repetição, novas variáveis serão iniciadas para auxiliar no
   var l = 1
   // -----------------------------------------
 ```
-Após ter inicializado as variáveis, agora é executado um novo laço para realizar a lógica do problema para cada passo. O número de iterações deste laço de acordo com a variável **n_passos**.
+Após ter inicializado as variáveis, agora é executado um novo laço para realizar a lógica do problema para cada passo. O número de iterações deste laço varia de acordo com a variável **n_passos**.
 
-Então, é setada uma variável ```a``` com o valor de uma distribuição uniforme no intervalo de 0 a 2 PI. A formula utilizada é r = 0 + u*(2PI - 0), ou seja, um número aleatório entre 0 e 1 multiplicado por 2 PI.
+Então, é setada uma variável **a** com o valor de uma distribuição uniforme no intervalo de 0 a 2π. A formula utilizada é r = 0 + u*(2π - 0), ou seja, um número aleatório entre 0 e 1 multiplicado por 2π.
 
-Após isto, a variável **a** é utilizada para se calcular o valor das novas variáveis temporárias **next_x** e **next_y**, que representarão as próximas coordenadas a serem alcançadas pelo bêbado no próximo passo. Conforme descrito pelo problema, o próximo passo será definido pela posição atual somada com a multiplação entre **1** e o cosseno de **a** para o eixo x e seno de **a** para o eixo y.
+Após isto, a variável **a** é utilizada para se calcular o valor das novas variáveis temporárias **next_x** e **next_y**, que representarão as próximas coordenadas a serem alcançadas pelo bêbado no próximo passo. Conforme descrito pelo problema, o próximo passo será definido pela posição atual somada com a multiplação entre **l** e o cosseno de **a** para o eixo x e seno de **a** para o eixo y.
 
 ``` javascript
   for (var j = 0; j < n_passos; j++) {
@@ -155,7 +155,7 @@ Após isto, a variável **a** é utilizada para se calcular o valor das novas va
     var next_y = pos_y[i] + l * Math.sin(a);
 
 ```
-Então as novas posições do bêbado são adicionadas as variáveis **pos_x**, **pos_y** e **positions**. Então o número do passo deve ser atualizado.
+As novas posições do bêbado são adicionadas as variáveis **pos_x**, **pos_y** e **positions**. Então o número do passo deve ser atualizado.
 
 ``` javascript
 
@@ -166,9 +166,9 @@ Então as novas posições do bêbado são adicionadas as variáveis **pos_x**, 
     i ++;
 
 ```
-Então é calculada a distância através da raiz de x ao quadrado + y ao quadrado, conforme descrito pelo problema. Então essa distância é adicionada ao vetor **distances**.
+Depois é calculada a distância através da raíz de x ao quadrado + y ao quadrado, conforme descrito pelo problema. Então essa distância é adicionada ao vetor **distances**.
 
-Além disso, também é calculado a raiz do número de passos dados até o momento, e adicionado no vetor **raiz**.
+Além disso, também é calculado a raíz do número de passos dados até o momento, e adicionado no vetor **raiz**.
 ``` javascript
 
     d = Math.sqrt(Math.pow(next_x,2) + Math.pow(next_y, 2));
@@ -179,7 +179,7 @@ Além disso, também é calculado a raiz do número de passos dados até o momen
   } // FIM DO LAÇO DE PASSOS
 
 ```
-Neste ponto terminamos o laço dos n_passos. O que significa o fim de uma repetição. Neste ponto, é adicionado ao vetor ```distancias_finais``` o valor da diferença entre a distância final obtida e a distância final esperada (raiz de n).
+Neste ponto terminamos o laço dos **n_passos**. O que significa o fim de uma repetição. Neste ponto, é adicionado ao vetor **distancias_finais** o valor da diferença entre a distância final obtida e a distância final esperada (raiz de n).
 ``` javascript
   distancia = distances[n_passos]["y"] - raiz[n_passos]["y"];
   if (distancia < 0) {
@@ -196,6 +196,7 @@ Ao final de todos estas repetições, teremos as posições do bêbado, as dist�
 Agora será feita uma distribuição dividida em classes para ser utilizada no histograma que vai mostrar as diferenças das distâncias finais.
 
 Primeiro se obtém a diferença entre o máximo e o mínimo das **distancias_finais**, através das variáveis **max**, **min** e **diferença**.
+
 O número de classes vai ser a raiz do número de repetições, mas se esse valor for superior a 30, o seu valor final fica em 30.
 
 Então é calculado o intervalo, dividindo a diferença calculada anteriormente pelo número de classes.
@@ -211,9 +212,9 @@ if (n_classes > 30) {
 intervalo = diferenca/n_classes;
 
 ```
-Agora são feitas algumas rotinas para adicionar cada amostra em sua classe correspondente.
+Após, são feitas algumas rotinas para adicionar cada amostra em sua classe correspondente.
 
-Primeiro é criado o vetor **limites_superiores** para salvar os limites superiores das classes e então para cada distância final encontrada, é feita uma verificação se o valor é menor que o limite superior. Se for menor, adiciona à classe correspondente, senão analisa se é menor que a próxima classe. Isto se repete até que todas as amostras sejam atribuidas a classes.
+Primeiro é criado o vetor **limites_superiores** para salvar os limites superiores das classes e então para cada distância final encontrada, é feita uma verificação se o valor é menor que o limite superior. Se for menor, adiciona à classe correspondente, senão, analisa se é menor que a próxima classe. Isto se repete até que todas as amostras sejam atribuidas às classes.
 ``` javascript
 limites_superiores = [];
 
@@ -237,9 +238,9 @@ for (k = 0; k < n_repeticoes; k ++) {
     }
 }
 ```
-Então os dados estão prontos, a rotina de criação de gráficos de acordo com a biblioteca Chart.js é chamada e os gráficos são plotados na tela.
+Então os dados estão prontos, a rotina de criação de gráficos de acordo com a biblioteca **Chart.js** é chamada e os gráficos são plotados na tela.
 
-Vale salientar que o os gráficos de posição e de distâncias mostrados são correspondentes à última repetição. Somente o histograma final contém informações de todas as repetições. Se o número de repetições for igual à 1, então o histograma não é mostrado.
+Vale salientar que o os gráficos de posição e de distâncias mostrados são correspondentes à última repetição. Somente o histograma final contém informações de todas as repetições. **Caso o número de repetições seja igual à 1, então o histograma não é mostrado**.
 
 ``` javascript
 
