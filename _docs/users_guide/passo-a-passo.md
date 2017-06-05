@@ -14,7 +14,7 @@ O sistema possui apenas dois campos para colocar dados:
 
 ![Campos](img/campos-2.jpg) *Imagem 1 - Campos para escrita dos valores*
 
-# 2 Como utilizar
+# 2. Como utilizar
 Para rodar a simulação do andar do bêbado é simples:
 
 Basta escolher um número de passos que o "bêbado" vai dar e o número de repetições da simulação.
