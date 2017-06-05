@@ -12,7 +12,7 @@ O sistema possui apenas dois campos para colocar dados:
 - Número de passos;
 - Repetições.
 
-![Campos](img/campos.png) *Imagem 1 - Campos para escrita dos valores*
+![Campos](img/campos-2.jpg) *Imagem 1 - Campos para escrita dos valores*
 
 # 2 Como utilizar
 Para rodar a simulação do andar do bêbado é simples:
@@ -27,7 +27,7 @@ Isto pode ser feito de 2 formas:
 # 3. Para gerar os gráficos
 Uma vez escolhidos os dois valores nos campos de dados, basta clicar no botão de **Começar simulação** e os gráficos serão gerados automaticamente.
 
-![Botões](img/botao.png) *Imagem 2 - Botão de iniciar simulação*
+![Botões](img/botao-2.jpg) *Imagem 2 - Botão de iniciar simulação*
 
 # 4. Para gerar uma nova simulação
 Deve-se apenas repetir os passos **2** e **3** deste manual, trocando ou não, o número de passos e repetições escolhido.
