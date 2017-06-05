@@ -21,8 +21,8 @@ Basta escolher um número de passos que o "bêbado" vai dar e o número de repet
 
 Isto pode ser feito de 2 formas: 
 
-- clicando nas setinhas de aumentar ou diminuir dos componentes ou
-- digitando no teclado o valor escolhido.
+- Clicando nas setinhas de aumentar ou diminuir dos componentes ou
+- Digitando no teclado o valor escolhido.
 
 # 3. Para gerar os gráficos
 Uma vez escolhidos os dois valores nos campos de dados, basta clicar no botão de **Começar simulação** e os gráficos serão gerados automaticamente.
