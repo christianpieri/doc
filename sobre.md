@@ -8,7 +8,7 @@ icon: icon-about
 Documentação gerada em **{{ site.time | date: '%d/%m/%y, às %Hh %Mmin' }}**
 ___
 
-Este site é uma criação de Christian de Pieri e Gabriel Langer para a disciplina de Modelagem e Simulação do professor Paulo Freitas da Universidade Federal de Santa Catarina (UFSC).
+Este site é uma criação de [Christian de Pieri](https://github.com/christianpieri) e [Gabriel Langer](https://github.com/gablanger) para a disciplina de Modelagem e Simulação do professor Paulo Freitas da Universidade Federal de Santa Catarina (UFSC).
 
 No site é disponibilizado informações de documentação e tecnologias utilizadas para o primeiro [trabalho](https://bit.ly/andardobebado) da disciplina no semestre de 2017.1: Andar do bêbado.
 
