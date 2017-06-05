@@ -42,11 +42,13 @@ Deve haver dois campos de livre digitação do usuário:
 - Número de passos;
 - Número de repetições.
 
-Os dois campos são de preenchimento **obrigatório** e devem aceitar apenas caracteres do tipo número. Caso o usuário não preencha um dos campos, o sistema deve emitir uma mensagem de erro informando que os dois campos devem ser preenchidos.
+Os dois campos são de preenchimento **obrigatório** e devem aceitar apenas caracteres do tipo número. Caso o usuário não preencha um dos campos, o sistema deve emitir uma mensagem de erro informando que este campo deve ser preenchido.
+
+Por padrão, quando o usuário abre o sistema pela primeira vez, o campo **Número de passos** deve vir preenchido com valor **10** e o campo **Número de repetições** deve vir preenchido com o valor **1**.
 
 ## 2.4 Histograma da amostra
 
-Com o número de replicações da simulação também sendo informado pelo usuário, é possível determinar o número total de classes através da função “raiz de n”, porém, o número de classes máximo possível deve ser 30; mesmo que n tenha um valor maior que 900.
+Com o número de replicações da simulação também sendo informado pelo usuário, é possível determinar o número total de classes através da função **raiz de n**, porém, o número de classes máximo possível deve ser **30**; mesmo que **n** tenha um valor maior que 900.
 
 # 3. Como utilizar o sistema
 
