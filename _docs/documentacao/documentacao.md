@@ -44,6 +44,10 @@ Deve haver dois campos de livre digitação do usuário:
 
 Os dois campos são de preenchimento **obrigatório** e devem aceitar apenas caracteres do tipo número. Caso o usuário não preencha um dos campos, o sistema deve emitir uma mensagem de erro informando que este campo deve ser preenchido.
 
+![Passos-inválido](passos-invalido.jpg) *Imagem 1 - Exemplo de mensagem de erro número de passos inválido*
+
+![Repetições-inválido](repeticoes-invalido.jpg) *Imagem 2 - Exemplo de mensagem de erro número de repetições inválido*
+
 Por padrão, quando o usuário abre o sistema pela primeira vez, o campo **Número de passos** deve vir preenchido com valor **10** e o campo **Número de repetições** deve vir preenchido com o valor **1**.
 
 ## 2.4 Histograma da amostra
