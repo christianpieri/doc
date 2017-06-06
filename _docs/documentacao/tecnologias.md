@@ -9,9 +9,9 @@ parent: documentacao
 
 - Bootstrap;
 - AWS;
+- GitHub Pages;
 - JavaScript;
-- Jekyll;
-- GitHub Pages.
+- Jekyll.
 
 # 2. Bootstrap
 
