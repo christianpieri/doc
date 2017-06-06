@@ -150,7 +150,7 @@ Então para cada repetição, novas variáveis serão iniciadas para auxiliar no
 ```
 Após ter inicializado as variáveis, agora é executado um novo laço para realizar a lógica do problema para cada passo. O número de iterações deste laço varia de acordo com a variável **n_passos**.
 
-Então, é setada uma variável **a** com o valor de uma distribuição uniforme no intervalo de 0 a 2π. A formula utilizada é r = 0 + u*(2π - 0), ou seja, um número aleatório entre 0 e 1 multiplicado por 2π.
+Então, é setada uma variável **a** com o valor de uma distribuição uniforme no intervalo de 0 a 2π. A fórmula utilizada é r = 0 + u*(2π - 0), ou seja, um número aleatório entre 0 e 1 multiplicado por 2π.
 
 Após isto, a variável **a** é utilizada para se calcular o valor das novas variáveis temporárias **next_x** e **next_y**, que representarão as próximas coordenadas a serem alcançadas pelo bêbado no próximo passo. Conforme descrito pelo problema, o próximo passo será definido pela posição atual somada com a multiplação entre **l** e o cosseno de **a** para o eixo x e seno de **a** para o eixo y.
 
