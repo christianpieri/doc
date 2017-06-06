@@ -7,10 +7,11 @@ parent: documentacao
 
 # 1. Tecnologias utilizadas no projeto
 
-- Bootstrap
-- AWS
-- JavaScript
-- Jekyll
+- Bootstrap;
+- AWS;
+- JavaScript;
+- Jekyll;
+- GitHub Pages.
 
 # 2. Bootstrap
 
@@ -20,12 +21,17 @@ O [Bootstrap](http://getbootstrap.com.br) é um framework front-end facilitador 
 # 3. AWS
 
 O [AWS](https://aws.amazon.com) é um serviço da Amazon iniciado em 2006, que oferece serviços de infraestrutura de TI para empresas por meio de serviços web (conhecidos, hoje, popularmente, como nuvem).
-AWS significa Amazon Web Services. Um dos maiores benefícios de se ter um servidor em nuvem é substituir os gastos com infraestrutura de TI e locar capacidade de armazenamento/processamento por um preço baixo. As empresas não precisam mais se preocupar ou planejar adiquirir servidores, basta alugar, instantaneamente serviços que rodam centenas de milhares de servidores em minutos e que nos trazem resultados rapidamente. A plataforma AWS é altamente escalável, confiável e de baixo custo. O projeto Andar do bêbado roda tanto sistema quanto documentação em um servidor da Amazon.
+AWS significa Amazon Web Services. Um dos maiores benefícios de se ter um servidor em nuvem é substituir os gastos com infraestrutura de TI e locar capacidade de armazenamento/processamento por um preço baixo. As empresas não precisam mais se preocupar ou planejar adiquirir servidores, basta alugar, instantaneamente, serviços que rodam centenas de milhares de servidores em minutos e que nos trazem resultados rapidamente. A plataforma AWS é altamente escalável, confiável e de baixo custo. O projeto Andar do bêbado roda seu sistema em um servidor da Amazon.
 
-# 4. JavaScript
+# 4. GitHub Pages
+O [GitHub Pages](https://pages.github.com/) é um serviço de hospedagem estático gratuito oferecido pelo GitHub (plataforma de hospedagem de código e controle de versão e colaboração). O serviço é designado para hostear projetos pessoais e organizacionais diretamente do repositório do projeto do GitHub. Juntamente ao Jekyll, também utilizado neste trabalho, é possível publicar páginas online e não necessita de suporte a servidor como PHP, Ruby ou Python. O projeto Andar do bêbado tem sua documentação hospedada em uma página estática do GitHub Pages.
+
+
+# 5. JavaScript
 
 O [JavaScript](https://www.javascript.com) (conhecido também como js) é uma linguagem de programação orientada a objetos que facilita a tarefa de programação. Altamente voltada para o lado do cliente, ou seja, processada no próprio navegador, é uma linguagem poderosa na web, além de proporcionar uma maior interatividade entre usuário e servidor. A parte lógica do projeto de Modelagem e Simulação é toda feita em JavaScript e melhor explicadas as funções na parte de **documentação do sistema** desta doc.
 
-# 5. Jekyll
+# 6. Jekyll
 
 O [Jekyll](https://jekyllrb.com) é um programa escrito na linguagem Ruby que permite a criação estática de websites e blogs. Ele utiliza HTML, CSS e JavaScript. A partir dele que esta documentação foi escrita e levantada no servidor. Pode-se utilizar uma linguagem simplificada, porém de extrema produtividade chamada **Markdown** para se escrever os arquivos publicados no site. Por não se ter necessidade de uma base de dados, o Jekyll é muito seguro e leve.
+
